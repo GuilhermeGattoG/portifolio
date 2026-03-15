@@ -1,6 +1,27 @@
 import React from "react"
 import "./styles.module.scss"
 import LinkNavigation from "../../atoms/LinkNavigation"
+import { NavLink } from "react-router-dom/cjs/react-router-dom.min"
+
+const NavBar = () => {
+
+    return (
+        <nav>
+            <div className={`nav-left`} ></div>
+            <div className={`nav-right`} >
+                <LinkNavigation to={"/"} text="Home" />
+                <LinkNavigation to={"/data/confeccao-brasil"} text={"Análise de Dados"} />
+            </div>
+        </nav>
+    )
+}
+
+export default NavBar
+
+// VERSÃO ANTIGA PRESERVADA PARA POSSÍVEIS FUTUROS TRABALHOS
+/*import React from "react"
+import "./styles.module.scss"
+import LinkNavigation from "../../atoms/LinkNavigation"
 
 const NavBar = () => {
 
@@ -24,8 +45,7 @@ const NavBar = () => {
 
     return (
         <nav>
-            <div className={`nav-left`} >
-            </div>
+            <div className={`nav-left`} ></div>
             <div className={`nav-right`} >
                 <LinkNavigation onClick={() => scrollToDiv("personal")} text="Pessoal" />
                 <LinkNavigation onClick={()  => scrollToDiv("professional")} text="Profissional" />
@@ -37,4 +57,4 @@ const NavBar = () => {
     )
 }
 
-export default NavBar
+export default NavBar*/
