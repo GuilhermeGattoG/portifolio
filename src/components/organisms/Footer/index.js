@@ -32,7 +32,7 @@ const Footer = () => {
                 <Image src="github-logo.svg" alt="github" width={getIconSize()} />
             </div>
             <div className={styles.gmail} onClick={() => goToPage("mailto:guilherme.gatto.g@gmail.com")} >
-                <Image src="gmail-logo.svg" alt="github" width={getIconSize()} />
+                <Image src="gmail-logo.svg" alt="e-mail" width={getIconSize()} />
             </div>
             <br/><br/><br/>
             <p className={styles.madeWithLove}>Made with &#128147; by &#128008;</p>

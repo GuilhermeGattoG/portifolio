@@ -25,6 +25,11 @@ const Professional = () => {
                         image={"medpass-logo.svg"}
                         text={"Developer"}
                         explanation={"Atuando como Desenvolver Web Jr., aprimorei minhas práticas de modelo de aplicações e versionamento enquanto programava Single Page Applications (SPAs) com o auxílio dos frameworks React.js e Vue.js. Também realizava manutenções de aplicações móveis utilizando React Native."}/>
+                    <ProfessionalCard 
+                        org={"Chamativa"}
+                        image={"chamativa-logo.svg"}
+                        text={"CEO"}
+                        explanation={"Trabalhei como CEO de uma fábrica de roupa em minha cidade natal (Itaí-SP). Uma empresa familiar que me confiou a missão de administrar, sendo minhas principais funções a de planejar, projetar e controlar a produção de toda a fábrica. Também tinha como objetivo entender os processos e trabalhar continuamente para melhoria e otimização dos mesmos."}/>
             </div>
         </div>
     )

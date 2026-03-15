@@ -1,23 +1,27 @@
 import React, {Component} from 'react';
+import { BrowserRouter as Router} from "react-router-dom"
 import './App.css';
 
 import NavBar from './components/organisms/NavBar';
 import Footer from './components/organisms/Footer';
-import Personal from "./components/template/Personal"
-import Professional from "./components/template/Professional";
-import AboutPage from "./components/template/AboutPage";
-import Tecnologies from "./components/template/Tecnologies"
+import Routes from './Routers';
+import Home from './pages/Home';
+import ConfeccaoBrasil from './pages/ConfeccaoBrasil';
+import { BrowserRouter } from 'react-router-dom/cjs/react-router-dom.min';
 
 function App() {
   return (
-    <div className="App">
+    <Router>
+
+      <div className="App">
         <NavBar />
-        <Personal/>
-        <Professional/>
-        <AboutPage/>
-        <Tecnologies/>
+
+        <Routes />
+
         <Footer />
-    </div>
+      </div>
+
+    </Router>
   )
 }
 
